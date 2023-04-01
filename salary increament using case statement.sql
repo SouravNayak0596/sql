@@ -1,18 +1,4 @@
---Select *
---from EmployeeDemographics
---Full outer join WareHouseEmployeeDemographics
---on EmployeeDemographics.EmployeeID = WareHouseEmployeeDemographics.EmployeeID
 
---select FirstName,LastName,Age,
---Case
---When age = 38 then 'Stanley'
---When Age > 30 Then 'Old'
---When Age between 27 and 30 Then 'Young'
---Else 'Baby'
---END
---from EmployeeDemographics
---Where Age is not Null
---Order by Age
 
 Select FirstName, LastName, Age, Salary,
 CASE
