@@ -1,0 +1,9 @@
+With cte_employee as
+( select Firstname, Lastname, Gender, Salary, count(Gender) over (partition by Gender) as Totalgender,  AVG(salary) over (partition by Gender) as Avgsalary
+from EmployeeDemographics
+Join EmployeeSalary
+on EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
+
+)
+Select *
+From cte_employee
