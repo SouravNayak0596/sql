@@ -1,3 +1,3 @@
-I will store all code or documents related to SQL in this repository.
+I will keep all SQL-related code and documents in this folder.
 
-Please feel free to download and use all code as your own.
+All code may be downloaded and used at your discretion.
