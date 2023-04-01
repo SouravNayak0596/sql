@@ -1,0 +1,10 @@
+Drop table if exists #temp_employee2
+Create table #temp_Employee2 (
+Jobtitle varchar(50), employeesperjob int, avgage int,  avgSalary int)
+
+insert into #temp_Employee2
+select  Jobtitle,  count(Jobtitle),AVG(Age), AVG(Salary)
+from EmployeeDemographics
+Join EmployeeSalary
+on EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
+group by  JobTitle
