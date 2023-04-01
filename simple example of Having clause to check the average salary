@@ -1,0 +1,8 @@
+select Jobtitle, AVG(salary) as avg_salary
+From EmployeeDemographics
+join EmployeeSalary
+on EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
+
+group by jobtitle
+having AVG(Salary) >40000
+order by AVG(salary) 
